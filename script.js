@@ -3,7 +3,7 @@ function checkPassword() {
     let confirmPassword = document.getElementById('cnfrm-password').value;
     let message = document.getElementById("message");
 
-    if (password.trim() !== '' && confirmPassword.trim() !== '') { // Check if passwords are not empty or just whitespace
+    if (password.trim() !== '' && confirmPassword.trim() !== '') {
         if (password === confirmPassword) {
             message.textContent = "Passwords Match";
             message.style.color = "green";
