@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form validation</title>
+    <title>Form Validation</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script> <!-- Corrected the script tag -->
 </head>
 <body>
     <!--Outer Box-->
     <div class="outer-box">
         <form>
-
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+            <label for="cnfrm-Password">Confirm Password</label> <!-- Corrected the typo here -->
+            <input type="password" id="cnfrm-password" placeholder="Password"> <!-- Corrected the id here -->
+            <p id="message" style="display: none">Demo test</p>
+            <input type="button" value="button" onclick="checkPassword()"> <!-- Corrected the function name here -->
         </form>
     </div>
     <!--End Outer Box-->
